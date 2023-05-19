@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("4k-Wallpapers.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+   
+}
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    width: 100%;
+    height: 53px;
+    
+}
+nav ul{
+    margin-left:33px;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+    font-size: 15px;
+    font-weight:400;
+   cursor: pointer;
+    transition:0.4s ease; 
+}
+nav ul li:hover{
+    border-bottom: 3px solid green;
+    font-size: 18px;
+    color: green;
+
+}
+.login{
+    width:400px;
+    height: 500px;
+    display:flex;
+    flex-direction:column;
+    margin: auto;
+    margin-top: 45px;
+    position: relative;
+    border-radius:30px ;
+    box-shadow: 0px 1px 15px 1px;
+    transition:0.5s;
+}   
+   
+
+.login:hover{
+    box-shadow: 0px 2px 32px 1px ;
+}   
+.container{
+    display: flex;
+    width:100%;
+    height: 500px;
+    background-color: white;
+    border-radius: 30px;
+    opacity: 0.3;
+    filter: blur(0.5px);
+}
+.form{
+    position: absolute;
+    width:100%;
+    height: 500px;
+}
+h1{
+    position:relative;
+    top:30px;
+    text-align: center;
+}
+.input1{
+    position: relative;
+    left: 76px;
+    top: 100px;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+    outline: 2px solid black;
+    
+}
+.input1::placeholder{
+     font-weight: 600;
+     color: black;
+     padding-left:15px;
+}
+.input1::placeholder:hover{
+    font-size: small;
+}
+.input1:focus{
+    outline: 2px solid black;
+    pointer-events:none;
+}
+.input1:focus::placeholder{
+    font-size: 10px;
+    position: relative;
+    bottom:10px;
+    transition: 0.4s ;
+}
+.input1:invalid{
+    outline: 2px solid #D21312;
+    animation-name: invalid;
+    animation-iteration-count: 3;
+    animation-duration: 0.1s;
+}
+@keyframes invalid{
+    from{
+       transform: translateX(10px);
+    }
+    to{
+       transform: translateX(-10px);
+    }
+}
+.input2{
+    width: 250px;
+    height: 40px;
+    position: relative;
+    left: 76px;
+    top: 150px;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+    outline: 2px solid black;
+}
+.input2::placeholder{
+    font-weight: 600;
+    color: black;
+    padding-left:15px;
+}
+.input2:focus::placeholder{
+    font-size: 10px;
+    position: relative;
+    bottom:10px;
+    transition: 0.4s ;
+}
+#checkbox{
+    position:relative;
+    right:170px ;
+    top: 200px;
+    color: black;
+    
+}
+.text{
+    position:relative;
+    right:170px ;
+    top: 199px;
+    font-size:small ;
+}
+button{
+    position:absolute;
+    left: 125px;
+    bottom: 100px;
+    width: 150px;
+    height: 45px;
+    border-radius: 20px;
+    border:2px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bolder;
+    
+}
+button:hover{
+   box-shadow: 0 4px 32px 2px black;
+   font-size: large;
+   transition: 0.5s ease-in-out;
+}
+a{
+    position: relative;
+    top: 195px;
+    left: 140px;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+button:active{
+    background-color: black;
+    color: white;
+}
+
+
